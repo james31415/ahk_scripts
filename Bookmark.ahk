@@ -10,6 +10,7 @@ KeyWait Alt
 WinGetTitle title, A
 if InStr(title, "Mozilla Firefox") {
 	title := StrReplace(title, " - Mozilla Firefox")
+	title := StrReplace(title, " — Mozilla Firefox")
 } else if InStr(title, "Microsoft Edge") {
 	title := StrReplace(title, " ‎- Microsoft Edge")
 
