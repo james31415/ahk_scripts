@@ -8,6 +8,14 @@ KeyWait Control
 KeyWait Alt
 
 WinGetTitle title, A
+if InStr(title, "YouTube") {
+	title := StrReplace(title, " - YouTube")
+}
+
+if InStr(title, "(Private Browsing)") {
+	title := StrReplace(title, " (Private Browsing)")
+}
+
 if InStr(title, "Mozilla Firefox") {
 	title := StrReplace(title, " - Mozilla Firefox")
 	title := StrReplace(title, " — Mozilla Firefox")
