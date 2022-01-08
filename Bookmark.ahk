@@ -34,7 +34,7 @@ if InStr(title, "Mozilla Firefox") {
 
 clipboard :=
 
-Send !d
+Send {F6}
 Sleep, 500
 
 Send ^c
